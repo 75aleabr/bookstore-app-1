@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container">
-    
+
 <div class="container">
     <form action="books" method="get">
         <div class="row">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-    
+
     </form>
 
     <div class="row justify-content-center">
@@ -88,8 +88,8 @@
 
                 </tbody>
             </table>
-            
-                
+
+
         </div>
 
 
