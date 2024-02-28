@@ -14,7 +14,8 @@
                     <div class="card-body">
                         <h5 class="card-title"><strong><a href="#">{{$book->book_name}}</a></strong></h5>
                         <p class="card-text">{{$book->book_auther}}</p>
-                        <h2 class="card-text">{{"$".$book->book_price}}</h2>
+                        <p class="card-text">{{$book->book_option}}</p>
+                        <h2 class="card-text">{{"Kr".$book->book_price}}</h2>
                         {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
                     </div>
                 </div>

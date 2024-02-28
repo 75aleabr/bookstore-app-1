@@ -41,7 +41,7 @@
                 <input type="text" name="book_price" placeholder="Book Price" class="form-control my-2">
                 <input type="text" name="book_author" placeholder="Book Author" class="form-control my-2">
 
-                <input type="text" name="book_author" placeholder="Options" class="form-control my-2">
+                <input type="text" name="book_option" placeholder="Book Option" class="form-control my-2">
 
                 {{-- <select class="custom-select" id="inputGroupSelect01">
                     <option selected>Choose...</option>
@@ -66,6 +66,7 @@
                         <th scope="col">Book Title</th>
                         <th scope="col">Book Price</th>
                         <th scope="col">Book Author</th>
+                        <th scope="col">Book Option</th>
                         <th scope="col">Update / Delete</th>
                     </tr>
                 </thead>
@@ -76,6 +77,7 @@
                         <th scope="row">{{$book->book_name}}</th>
                         <th scope="row">{{$book->book_price}}</th>
                         <th scope="row">{{$book->book_auther}}</th>
+                        <th scope="row">{{$book->book_option}}</th>
                         <th scope="row">
                             <a href="/books/edit/{{$book->bid}}" class="btn btn-primary">Edit</a>
                             <a href="/books/delete/{{$book->bid}}" class="btn btn-danger">Delete</a>

@@ -16,6 +16,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\bookController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\usersController;
+use App\Http\Controllers\ReviewController;
+
 
 
 // Route::get('/', function () {
@@ -40,6 +42,9 @@ Route::get('/profile/edit/{id}', [profileController::class, 'edit']);
 Route::post('/profile/update/{id}', [profileController::class, 'update']);
 
 Route::get('users', [usersController::class, 'index']);
+
+// Review Routes
+Route::resource('reviews', ReviewController::class);
 
 // Route::get('/login1', function () {
 //     return view('authentication.login');

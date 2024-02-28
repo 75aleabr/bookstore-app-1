@@ -18,6 +18,7 @@ class CreateBooksTable extends Migration
             $table->string('book_name');
             $table->string('book_price');
             $table->string('book_auther');
+            $table->string('book_option');
             $table->string('book_image');
         });
     }

@@ -18,6 +18,7 @@
                 <input type="text" name="book_price" placeholder="Book Price" class="form-control my-2" value="{{$books->book_price}}">
                 <input type="text" name="book_author" placeholder="Book Author" class="form-control my-2" value="{{$books->book_auther}}">
 
+                <input type="text" name="book_option" placeholder="Book Option" class="form-control my-2" value="{{$books->book_option}}">
                 <div class="form-group">
                     <button class="btn btn-success">Update</button>
                 </div>

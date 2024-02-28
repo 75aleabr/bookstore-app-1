@@ -60,6 +60,7 @@ class bookController extends Controller
         $b1->book_name = $request->book_title;
         $b1->book_price = $request->book_price;
         $b1->book_auther = $request->book_author;
+        $b1->book_option = $request->book_option;
         if($request->hasfile('book_image')){
             $file = $request->file('book_image');
             $ext = $file->getClientOriginalExtension();
@@ -113,6 +114,8 @@ class bookController extends Controller
         $books->book_name = $request->book_title;
         $books->book_price = $request->book_price;
         $books->book_auther = $request->book_author;
+        $books->book_option = $request->book_option;
+
         $books->save();
         return redirect('books');
     }
